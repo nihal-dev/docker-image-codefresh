@@ -24,7 +24,7 @@ steps:
     type: "build"
     image_name: "nihals/codefresh-nginx"
     working_directory: "${{clone}}" ##name of the stage were you cloned the repostory
-    tag: "${{CF_BUILD_ID}}"
+    tag: "${{CF_SHORT_REVISION}}"
     dockerfile: "Dockerfile"
     stage: "build"
 
